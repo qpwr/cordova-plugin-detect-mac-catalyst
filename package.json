@@ -1,0 +1,22 @@
+{
+  "name": "cordova-plugin-detect-catalyst",
+  "version": "1.0.0",
+  "description": "Test",
+  "cordova": {
+    "id": "cordova-plugin-detect-catalyst",
+    "platforms": [
+      "osx"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "network",
+    "websocket",
+    "server",
+    "ecosystem:cordova",
+    "cordova-osx"
+  ],
+  "author": "",
+  "license": "MIT"
+}

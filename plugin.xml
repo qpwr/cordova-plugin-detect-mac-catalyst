@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    id="cordova-plugin-detect-mac-catalyst" version="1.0.0">
+    <name>Detect Mac Catalyst</name>
+    <description>Detects if the app has been built for Mac Catalyst and provides a javascript function for it.</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,ios,catalyst,mac,detection</keywords>
+    
+    <js-module src="www/detect-mac-catalyst.js" name="detectMacCatalyst">
+        <clobbers target="detectMacCatalyst" />
+    </js-module>
+    
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DetectMacCatalystPlugin">
+                <param name="ios-package" value="DetectMacCatalystPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <header-file src="src/ios/DetectMacCatalystPlugin.h" />
+        <source-file src="src/ios/DetectMacCatalystPlugin.m" />
+    </platform>
+</plugin>
